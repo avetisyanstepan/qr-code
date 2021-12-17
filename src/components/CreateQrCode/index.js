@@ -99,7 +99,7 @@ export const QrCode = () => {
                         GENERATE YOUR OWN   <br/> <span className='text-red text-5xl'>QR</span> CODE
                     </span>
                 </div>
-                <div className='md:flex md:flex-row flex flex-col md:mt-24 mt-8 md:justify-around items-center '>
+                <div className='md:flex md:flex-row flex flex-col md:mt-16 mt-8 md:justify-around items-center '>
                     <QRCode  
                         id={'qrCode'}
                         value={qrCodeValue}
@@ -111,14 +111,14 @@ export const QrCode = () => {
                         
                     />
                     <div className='flex flex-col  text-left'>
-                        <div className='md:mt-0 mt-12'>
+                        <div className='md:mt-0 mt-6'>
                             <span className='font-FuzzyReg'>Link to </span>
-                            <input onChange={(e) => setQrCodeValue(e.target.value)} className='h-8 w-full border-b-2 outline-none'/> 
+                            <input onChange={(e) => setQrCodeValue(e.target.value)} className='w-full border-b-2 outline-none focus:border-red'/> 
                         </div>
                       
-                        <div className='flex flex-col mt-4 mb-4'>
+                        <div className='flex flex-col md:mt-4 mt-2 md:mb-4 mb-2'>
                             <span className='font-FuzzyReg'>Choose type</span>
-                            <div className='flex mt-4 '>
+                            <div className='flex md:mt-4 mt-1 '>
                                 <label>
                                     
                                 </label>
@@ -126,7 +126,7 @@ export const QrCode = () => {
                                 <input className='cursor-pointer h-6 w-6' type="radio"  name="fav_language" onClick={() => setIncludeMargin(false) } />
                             </div>
                         </div>
-                        <span className='mb-4 font-FuzzyReg'>Choose QR color</span>
+                        <span className='md:mb-4 mb-2 font-FuzzyReg'>Choose QR color</span>
                         <div className='flex'>
                             <button className={`w-8 h-8 mr-2 rounded-full bg-red`} onClick={() => setBgColor('red')}/>    
                             <button className={`w-8 h-8 mr-2 rounded-full bg-green`} onClick={() => setBgColor('green')}/>        
@@ -136,7 +136,7 @@ export const QrCode = () => {
                             <button className={`w-8 h-8 mr-2 rounded-full bg-blue`}onClick={() => setBgColor('blue')}/>    
 
                         </div>
-                        <span className='my-4 font-FuzzyReg'>Choose background color</span>
+                        <span className='md:my-4 my-2 font-FuzzyReg'>Choose background color</span>
                         <div className='flex'>
                             <button className={`w-8 h-8 mr-2 rounded-full bg-red`} onClick={() => setBgColor('red')}/>    
                             <button className={`w-8 h-8 mr-2 rounded-full bg-green`} onClick={() => setBgColor('green')}/>        
@@ -172,8 +172,8 @@ export const QrCode = () => {
                             </button>
                         </div> 
                     :
-                        <div className='mt-10 flex justify-center'>
-                            <span className='text-red font-FuzzyBold '>
+                        <div className='md:mt-10 mt-2 flex justify-center'>
+                            <span className='text-red font-FuzzyBold text-center '>
                                 To download QR code image please {""}
                                 <Link to='/login' className='text-blue underline'>
                                     Sign in

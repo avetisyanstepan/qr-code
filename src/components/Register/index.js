@@ -62,7 +62,7 @@ export const Register = () => {
                 !successPage 
                 ?
                     <div>
-                        <div className="mb-8 flex md:justify-end justify-center md:mt-0 mt-8 ">
+                        <div className="mb-8 flex md:justify-end justify-center md:mt-0 mt-8">
                             <span className="font-FuzzyReg">If you have account? <a href='/login' className="text-blue font-FuzzyBold underline">Sign In</a></span>
                         </div>
                         <div className="flex justify-center">
@@ -84,7 +84,7 @@ export const Register = () => {
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                     placeholder="e.g. qr-code@gmail.com "
-                                    className="outline-none border-b-2 border-gray"
+                                    className="outline-none border-b-2 border-gray focus:border-red"
                                     error={touched.email ? errors.email : undefined}
                                 />
                                 {errors.email ? <span className='text-red'>Please enter valid email address</span> : undefined}
@@ -95,7 +95,7 @@ export const Register = () => {
                                     type={typePassword}
                                     name='password'
                                     placeholder="Type your password"
-                                    className="outline-none border-b-2 relative border-gray"
+                                    className="outline-none border-b-2 relative border-gray focus:border-red"
                                     value={values.password}
                                     onChange={handleChange}
                                     onBlur={handleBlur}

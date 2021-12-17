@@ -57,7 +57,7 @@ export const ForgotPassword = () => {
                                 type='email'
                                 name='email'
                                 placeholder="Type your email"
-                                className="outline-none border-b-2 border-gray"
+                                className="outline-none border-b-2 border-gray focus:border-red"
                                 value={values.email}
                                 onChange={handleChange}
                                 onBlur={handleBlur}

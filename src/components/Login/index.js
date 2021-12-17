@@ -72,7 +72,7 @@ export const Login = () => {
                             type='email'
                             placeholder="Type your email"
                             name='email'
-                            className="outline-none border-b-2 border-gray"
+                            className="outline-none border-b-2 border-gray focus:border-red"
                             value={values.email}
                             onChange={handleChange}
                             onBlur={handleBlur}
@@ -87,7 +87,7 @@ export const Login = () => {
                                 type={typePassword}
                                 name='password'
                                 placeholder="Type your password"
-                                className="outline-none border-b-2 relative border-gray"
+                                className="outline-none border-b-2 relative border-gray focus:border-red"
                                 value={values.password}
                                 onChange={handleChange}
                                 onBlur={handleBlur}
