@@ -8,11 +8,19 @@ module.exports = {
         'green': '#22c55e',
         'blue': '#2563eb',
         'yellow': '#fde047',
-        'black': '#111827'
+        'black': '#111827',
+        'gray': '#9ca3af',
 
+        
     },
 
-    extend: {},
+    extend: {
+      fontFamily: {
+        FuzzyReg: ['FuzzyReg'],
+        FuzzyBold: ['FuzzyBold'],
+
+      },
+    },
   },
   plugins: [],
 }

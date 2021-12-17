@@ -15,3 +15,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'FuzzyReg';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/fonts/FuzzyBubbles-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'FuzzyBold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../public/fonts/FuzzyBubbles-Bold.ttf');
+}
